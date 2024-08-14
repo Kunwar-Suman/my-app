@@ -1,0 +1,114 @@
+/* UserDashboard.css */
+
+/* General Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changed to flex-start to align items at the top */
+    height: 100vh;
+    background: linear-gradient(135deg, #e2e2e2, #ffffff);
+    padding: 20px;
+    position: relative;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+  
+.top-right-buttons {
+    position: fixed; /* Fixed positioning for logout button */
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: auto; /* Adjust width to fit content */
+}
+  
+.logout-button {
+    background-color: #dc3545; /* Red color for logout button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.logout-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+  
+.dashboard-header {
+    font-size: 32px;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+  
+.dashboard-message {
+    font-size: 20px;
+    color: #495057;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.dashboard-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+  
+.section-header {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+  
+.dashboard-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.dashboard-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+  
+.loading-message, .login-message {
+    font-size: 18px;
+    color: #343a40;
+    text-align: center;
+    font-weight: 500;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header {
+        font-size: 28px;
+    }
+  
+    .dashboard-message, .loading-message, .login-message {
+        font-size: 16px;
+    }
+  
+    .dashboard-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

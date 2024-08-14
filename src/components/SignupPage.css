@@ -1,0 +1,128 @@
+/* Overall container styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust height considering the navbar height */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 0 20px;
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    margin-top: 60px; /* Adjust margin-top to avoid overlap with a fixed navbar */
+}
+
+/* Form styling */
+.signup-form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading styling */
+.signup-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Input styling */
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus styling */
+.signup-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+/* Button hover styling */
+.signup-form button:hover {
+    background: #0056b3;
+}
+
+/* Button disabled styling */
+.signup-form button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Error message styling */
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* General error message styling */
+.general-error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Loading spinner styling */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.loading-spinner::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styling for the switch link */
+.signup-form .switch-link {
+    margin-top: 15px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.signup-form .switch-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-form .switch-link a:hover {
+    text-decoration: underline;
+}
